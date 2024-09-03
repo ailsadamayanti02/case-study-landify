@@ -1,0 +1,98 @@
+.button {
+    display: flex;
+    grid-column-gap: 8px;
+    padding: 16px 24px;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 8px;
+    color: $primary-600;
+    font-size: $font-md;
+    font-weight: $weight-semibold;
+    line-height: $height-md;
+
+    &:hover {
+        background-color: $primary-600;
+        color: white;
+
+        img {
+            filter: brightness(0) invert(1);
+            /* Contoh untuk efek warna putih dan hitam */
+        }
+    }
+
+    img {
+        display: block;
+        transition: filter 0s ease;
+    }
+
+
+    &--base {
+        background-color: $primary-600;
+        color: white;
+
+        &:hover {
+            background-color: $primary-300;
+        }
+    }
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 16px;
+
+    @media screen and (max-width: 991px) {
+        grid-row-gap: 8px;
+    }
+
+    &--center {
+        align-items: center;
+    }
+
+    &--logos {
+        padding-top: 40px;
+        width: 488px;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+
+    }
+
+    &__title {
+        text-align: left;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__paragraf {
+        max-width: 648px;
+        text-align: left;
+
+        @media screen and (max-width: 479px) {
+            max-width: 100%;
+        }
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+}
+
+.max-width-488 {
+    max-width: 488px;
+    margin-left: 104px;
+
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.clients {
+    position: relative;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+
+    &__wrap {
+        display: flex;
+        padding-top: 42px;
+        padding-bottom: 42px;
+        justify-content: center;
+        grid-column-gap: 64px;
+        border-bottom: 1px solid $neutral-200;
+        border-top: 1px solid $neutral-200;
+
+        @media screen and (max-width: 991px) {
+            flex-flow: wrap;
+            grid-row-gap: 32px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+
+
+}

@@ -1,0 +1,62 @@
+.navbar {
+    position: relative;
+
+    width: 100%;
+
+    &__content-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        grid-column-gap: 32px;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        grid-column-gap: 16px;
+    }
+
+
+    &__brand {
+        height: 32px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 8px;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semibold;
+    }
+
+    &__apps {
+        display: flex;
+        grid-column-gap: 12px;
+
+        @media screen and (max-width: 479px) {
+            display: none;
+        }
+    }
+
+    &__menu-button {
+        display: none;
+
+        @media screen and (max-width: 991px) {
+            display: block;
+
+        }
+    }
+
+
+}

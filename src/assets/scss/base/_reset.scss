@@ -1,0 +1,52 @@
+body {
+}
+
+a {
+  color: $neutral-900;
+  text-decoration: none;
+}
+
+p {
+  font-size: $font-lg;
+  font-weight: $weight-normal;
+  color: $neutral-700;
+}
+
+h1 {
+  @extend %heading;
+  @include heading-size($h1-font, $h2-font, $h1-mobile-font, $h2-line, $h1-line, $h1-mobile-line);
+}
+
+h2 {
+  @extend %heading;
+  @include heading-size($h2-font, $h2-mobile-font, $h2-mobile-font, $h2-line, $h3-line, $h2-mobile-line);
+
+}
+
+h3 {
+  @extend %heading;
+  @include heading-size($h3-font, $h4-font, $h3-mobile-font, $h2-line, $h4-line, $h3-mobile-line);
+
+}
+
+h4 {
+  @extend %heading;
+  @include heading-size($h4-font, $h4-mobile-font, $h4-mobile-font, $h2-line, $h5-line, $h4-mobile-line);
+
+}
+
+h5 {
+  @extend %heading;
+  @include heading-size($h5-font, $h2-font, $h5-mobile-font, $h2-line, $h5-line, $h5-mobile-line);
+
+}
+
+.new-container {
+  @include new-container(
+    $container-padding-x,
+    $container-padding-x,
+    $container-tablet-padding-x,
+    $container-mobile-padding-x,
+    $container-max-width
+  );
+}

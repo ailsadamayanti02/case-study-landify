@@ -1,0 +1,40 @@
+.metrics {
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    &__content-wrap {
+        display: flex;
+        grid-column-gap: 32px;
+
+        @media screen and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 48px;
+        }
+
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 40px;
+
+        @media screen and (max-width: 479px) {
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 24px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        width: 280px;
+        grid-column-gap: 16px;
+
+    }
+}
