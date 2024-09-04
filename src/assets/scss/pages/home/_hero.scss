@@ -17,6 +17,13 @@
 
    &__bg-1 {
       position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+
+      img {
+         width: 100%;
+      }
 
       @media screen and (max-width: 991px) {
          display: none;
@@ -46,45 +53,41 @@
    &__bg-4 {
       position: absolute;
       top: 448px;
-      left: 988px;
+      right: 0;
 
       @media screen and (max-width: 991px) {
          top: 610px;
-         left: 526px;
+         right: 0;
       }
-
-      @media screen and (max-width: 479px) {
-         left: 257px;
-     }
    }
 
    &__bg-5 {
       position: absolute;
       top: 508px;
-      left: 828px;
+      right: 0;
 
       @media screen and (max-width: 991px) {
-         top: 645px;
-         left: 540px;
+         top: 670px;
+         right: 0;
       }
 
       @media screen and (max-width: 479px) {
-         left: 215px;
+         right: 0;
      }
    }
 
    &__bg-6 {
       position: absolute;
       top: 541px;
-      left: 1260px;
+      right: 0;
 
       @media screen and (max-width: 991px) {
-         top: 716px;
-         left: 672px;
+         top: 704px;
+         right: 0;
       }
 
       @media screen and (max-width: 479px) {
-         left: 328px;
+         right: 0;
      }
    }
 
