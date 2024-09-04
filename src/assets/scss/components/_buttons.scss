@@ -9,6 +9,7 @@
     font-size: $font-md;
     font-weight: $weight-semibold;
     line-height: $height-md;
+    transition: all 0.2s ease;
 
     &:hover {
         background-color: $primary-600;
@@ -22,7 +23,7 @@
 
     img {
         display: block;
-        transition: filter 0s ease;
+        transition: filter 0.2s ease;
     }
 
 
@@ -88,6 +89,7 @@
 }
 
 .max-width-488 {
+    position: absolute;
     max-width: 488px;
     margin-left: 104px;
 
