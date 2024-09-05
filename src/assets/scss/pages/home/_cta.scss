@@ -23,7 +23,7 @@
 
   &__content {
     display: flex;
-    width: 592px;
+    width: 48.68%;
     flex-direction: column;
     padding-top: 110px;
     padding-bottom: 110px;
@@ -58,11 +58,14 @@
   &__image-wrap {
     display: flex;
     position: relative;
+    width: 48.68%;
 
     @media screen and (max-width: 991px) {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       height: auto;
+      overflow: hidden;
     }
 
     @media screen and (max-width: 576px) {
@@ -75,34 +78,69 @@
   }
 
   &__image-1 {
+    width: 232px;
+    height: 464px;
     position: absolute;
+    top: -80px;
     left: 48px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+    }
 
     @media screen and (max-width: 991px) {
       position: relative;
-      margin-bottom: 174px;
+      flex-grow: 1;
+      margin-bottom: 94px;
+      left: 0;
     }
 
     @media screen and (max-width: 576px) {
-      left: 0%;
       margin-bottom: 0%;
+      top: 0;
+      height: calc(464px - 80px);
+      width: 232px;
+
+      >img {
+        object-fit: cover;
+        object-position: 0 100%;
+        position: absolute;
+      }
     }
   }
 
   &__image-2 {
+    width: 232px;
+    height: 464px;
     position: absolute;
     bottom: 0%;
+    top: 174px;
     left: 312px;
 
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
     @media screen and (max-width: 991px) {
+      flex-grow: 1;
       position: relative;
-      left: -48px;
-      margin-top: 188px;
+      left: 0;
     }
 
     @media screen and (max-width: 576px) {
-      left: 0%;
       margin-top: 0%;
+      top: 0;
+      height: calc(464px - 80px);
+      width: 232px;
+
+      >img {
+        object-fit: cover;
+        object-position: 0 0%;
+        position: absolute;
+      }
     }
   }
 

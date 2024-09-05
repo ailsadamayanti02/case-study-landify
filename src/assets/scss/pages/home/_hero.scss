@@ -174,7 +174,11 @@
 
    &__button-wrap {
       display: flex;
-      grid-column-gap: 16px;
+      grid-gap: 16px;
+
+      @media screen and (max-width: 479px) {
+        flex-direction: column;
+      }
    }
 
 }

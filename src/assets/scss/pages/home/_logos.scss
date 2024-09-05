@@ -16,7 +16,7 @@
         border-top: 1px solid $neutral-100;
         grid-column-gap: 32px;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 991px) {
             display: flex;
             flex-direction: column;
             grid-row-gap: 36px;
@@ -45,13 +45,11 @@
 
     &__image-logo {
         display: flex;
-        margin: 40px 46px;
         align-items: center;
         flex-direction: column;
         grid-gap: 64px;
 
         @media screen and (max-width: 991px) {
-            padding: 24px 28px;
             grid-row-gap: 40px;
             margin: 0;
         }
@@ -80,20 +78,36 @@
 
     &__image-bg {
         position: absolute;
-        bottom: auto;
+        height: 270px;
+        top: 0;
         z-index: -1;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 991px) {
             width: 100%;
-            height: 168px;
+            height: 164px;
+        }
+    }
+
+    &__image-wrap-1 {
+        display: flex;
+        grid-column-gap: 64px;
+        margin-top: 40px;
+        margin-inline: 46px;
+
+        @media screen and (max-width: 991px) {
+            margin-top: 24px;
+            margin-inline: 28px;
+            grid-column-gap: 40px;
         }
     }
 
     &__image-wrap {
         display: flex;
         grid-column-gap: 64px;
+        margin-bottom: 40px;
 
         @media screen and (max-width: 991px) {
+            margin-bottom: 28px;
             grid-column-gap: 40px;
         }
     }
