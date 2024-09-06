@@ -48,6 +48,12 @@
     font-weight: $weight-medium;
     line-height: $height-lg;
     color: $neutral-900;
+
+    opacity: 0;
+    transform: translateX(-20px);
+    /* Mulai dari bawah */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* Transisi halus */
   }
 
   &__badges {
@@ -118,7 +124,7 @@
     bottom: 0%;
     top: 174px;
     left: 312px;
-
+    
     img {
       width: 100%;
       height: 100%;

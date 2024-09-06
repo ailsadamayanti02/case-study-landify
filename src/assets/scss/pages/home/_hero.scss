@@ -73,7 +73,7 @@
 
       @media screen and (max-width: 479px) {
          right: 0;
-     }
+      }
    }
 
    &__bg-6 {
@@ -88,7 +88,7 @@
 
       @media screen and (max-width: 479px) {
          right: 0;
-     }
+      }
    }
 
    &__bg-7 {
@@ -161,6 +161,14 @@
       padding-right: 84px;
       padding-left: 84px;
       height: 640px;
+      animation-name: MoveInTop;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      /* Tetap tersembunyi hingga animasi dimulai */
+      transform: translateY(-3rem);
 
       @media screen and (max-width: 991px) {
          justify-content: center;
@@ -177,7 +185,7 @@
       grid-gap: 16px;
 
       @media screen and (max-width: 479px) {
-        flex-direction: column;
+         flex-direction: column;
       }
    }
 

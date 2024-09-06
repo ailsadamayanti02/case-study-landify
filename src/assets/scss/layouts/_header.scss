@@ -7,6 +7,14 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        animation-name: MoveInTop;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        /* Tetap tersembunyi hingga animasi dimulai */
+        transform: translateY(-3rem);
+
     }
 
     &__left {

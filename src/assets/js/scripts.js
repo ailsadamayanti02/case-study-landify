@@ -13,3 +13,5 @@ import * as $ from 'jquery'
 $(document).ready(function () {
   console.log('Welcome');
 })
+
+import "./custom/animation";

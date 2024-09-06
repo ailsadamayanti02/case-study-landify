@@ -1,0 +1,35 @@
+@keyframes MoveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+@keyframes MoveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Mulai dari bawah posisi akhir */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Bergerak ke posisi akhir */
+    }
+  }
+  
+  

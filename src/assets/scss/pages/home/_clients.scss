@@ -4,6 +4,11 @@
     padding-top: 16px;
     padding-bottom: 16px;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Mulai dari bawah */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* Transisi halus */
 
     &__wrap {
         display: flex;

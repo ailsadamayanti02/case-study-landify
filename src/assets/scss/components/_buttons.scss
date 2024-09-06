@@ -10,6 +10,14 @@
     font-weight: $weight-semibold;
     line-height: $height-md;
     transition: all 0.2s ease;
+    animation-name: MoveInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    /* Tetap tersembunyi hingga animasi dimulai */
+    transform: translateX(-10rem);
 
     &:hover {
         background-color: $primary-600;
@@ -43,11 +51,13 @@
     flex-direction: column;
     grid-row-gap: 16px;
 
+
     @media screen and (max-width: 991px) {
         grid-row-gap: 8px;
     }
 
     &--center {
+
         align-items: center;
     }
 
@@ -67,8 +77,19 @@
 
     &__title {
         text-align: left;
+        animation-name: MoveInLeft;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-timing-function: ease-out;
+
 
         &--center {
+            animation-name: none;
+            opacity: 0;
+            transform: translateY(-20px);
+            /* Mulai dari bawah */
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            /* Transisi halus */
             text-align: center;
         }
     }
@@ -76,14 +97,27 @@
     &__paragraf {
         max-width: 648px;
         text-align: left;
+        animation-name: MoveInLeft;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        /* Tetap tersembunyi hingga animasi dimulai */
+        transform: translateX(-10rem);
 
-        
 
         @media screen and (max-width: 479px) {
             max-width: 100%;
         }
 
         &--center {
+            animation-name: none;
+            opacity: 0;
+            transform: translateY(-20px);
+            /* Mulai dari bawah */
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            /* Transisi halus */
             text-align: center;
         }
     }
@@ -100,4 +134,13 @@
         max-width: 100%;
         margin-left: 0;
     }
+}
+
+.animation-heading-3 {
+    animation-name: none;
+    opacity: 0;
+    transform: translateX(-20px);
+    /* Mulai dari bawah */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* Transisi halus */
 }

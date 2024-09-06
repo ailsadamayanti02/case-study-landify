@@ -86,6 +86,11 @@
         padding: 32px;
         border-radius: 8px;
         background-color: white;
+        opacity: 0;
+        transform: translateY(0);
+        /* Mulai dari bawah */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        /* Transisi halus */
 
         &--1 {
             position: relative;
