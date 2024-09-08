@@ -37,11 +37,5 @@
         align-items: center;
         grid-column-gap: 16px;
 
-        opacity: 0;
-        transform: translateY(0);
-        /* Mulai dari bawah */
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        /* Transisi halus */
-
     }
 }
